@@ -16,7 +16,7 @@ Example - https://egghead.io/courses/advanced-react-component-patterns
 
 ### Step 2 :
 
-Enter `inject-t-with-contentListStore` in React DevTools `Search`
+Enter `inject-with-courseInfoStore-notificationStore-currentUserStore` in React DevTools `Search`
 
 ### Step 3 :
 
@@ -24,7 +24,7 @@ Enter the following in the `Developer Console`
 
 ```js
 var egghead = [];
-$r.context.mobxStores.courseInfoStore.courseLessons.map(course =>
+$r.props.course.lessons.map(course =>
   egghead.push({
     title: course.title,
     url: course.media_urls.hls_url
